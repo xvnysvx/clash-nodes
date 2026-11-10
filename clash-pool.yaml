@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 🇯🇵 VLESS-001 | clashfree
+  - name: 🇫🇷 VLESS-001 | carry
     server: s2523.fuhuovps.xyz
     port: 443
     type: vless
@@ -22,7 +22,7 @@ proxies:
     xhttp-opts:
       path: 356257a80f246d77bb43c7d9d7f98d05
       host: u695098u6b0550c8s2521.xxti.top
-  - name: 🇺🇸 VLESS-002 | clash-node-s
+  - name: 🇩🇪 VLESS-002 | carry
     server: jp.sofast.live
     port: 52683
     type: vless
@@ -31,7 +31,7 @@ proxies:
     tls: false
     skip-cert-verify: true
     network: tcp
-  - name: 🇯🇵 VLESS-003 | clashfree
+  - name: 🇫🇷 VLESS-003 | carry
     server: s2503.ccgfw.online
     port: 443
     type: vless
@@ -47,7 +47,7 @@ proxies:
     client-fingerprint: firefox
     network: tcp
   - cipher: aes-256-gcm
-    name: 🌐 SS-004 | daily_free_v
+    name: 🇫🇷 SS-004 | carry
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.36
@@ -55,7 +55,7 @@ proxies:
     type: ss
     udp: true
   - type: vmess
-    name: 🇺🇸 VMESS-005 | MetaFetch
+    name: 🌐 VMESS-005 | carry
     server: 172.67.190.164
     port: 443
     uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
@@ -71,7 +71,7 @@ proxies:
       headers:
         Host: guanwang.awsno.com
   - type: vmess
-    name: 🇰🇷 VMESS-006 | MetaFetch
+    name: 🌐 VMESS-006 | carry
     server: 172.64.145.93
     port: 443
     uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
@@ -86,7 +86,7 @@ proxies:
       headers:
         Host: guanwang.awsno.com
   - type: vmess
-    name: 🌐 VMESS-007 | MetaFetch
+    name: 🌐 VMESS-007 | carry
     server: 39.108.113.127
     port: 10086
     uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
@@ -96,7 +96,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: 🇨🇦 VMESS-008 | MetaFetch
+  - name: 🌐 VMESS-008 | carry
     server: 104.18.42.163
     port: 443
     type: vmess
@@ -112,7 +112,7 @@ proxies:
       headers:
         Host: guanwang.awsno.com
   - client-fingerprint: firefox
-    name: 🇩🇪 VLESS-009 | AutoMergePub
+    name: 🇦🇺 VLESS-009 | carry
     network: xhttp
     port: 443
     server: 193.160.208.240
@@ -127,7 +127,7 @@ proxies:
   - alpn:
       - h3
     client-fingerprint: edge
-    name: 🇳🇱 VLESS-010 | AutoMergePub
+    name: 🇦🇺 VLESS-010 | carry
     network: xhttp
     port: 443
     server: 151.101.36.61
@@ -141,7 +141,7 @@ proxies:
       mode: auto
       path: /
   - cipher: aes-256-gcm
-    name: 🌐 SS-011 | daily_free_v
+    name: 🇫🇷 SS-011 | carry
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.63
@@ -152,7 +152,7 @@ proxies:
       - h2
       - http/1.1
     client-fingerprint: firefox
-    name: 🌐 VLESS-012 | AutoMergePub
+    name: 🇦🇺 VLESS-012 | carry
     network: xhttp
     port: 443
     server: cdn-ya.shamanapp.online
@@ -183,7 +183,7 @@ proxies:
   - alpn:
       - h2
     client-fingerprint: qq
-    name: 🇺🇸 VLESS-013 | AutoMergePub
+    name: 🇦🇺 VLESS-013 | carry
     network: xhttp
     port: 443
     server: uuss2.qik-server.uk
@@ -197,7 +197,7 @@ proxies:
       mode: stream-one
       path: /static/js/chunk
   - cipher: aes-256-gcm
-    name: 🌐 SS-014 | daily_free_v
+    name: 🇫🇷 SS-014 | carry
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.54
@@ -205,7 +205,7 @@ proxies:
     type: ss
     udp: true
   - cipher: aes-256-gcm
-    name: 🌐 SS-015 | daily_free_v
+    name: 🇫🇷 SS-015 | carry
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.90
@@ -213,7 +213,7 @@ proxies:
     type: ss
     udp: true
   - cipher: aes-256-gcm
-    name: 🌐 SS-016 | daily_free_v
+    name: 🇫🇷 SS-016 | carry
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.81
@@ -221,7 +221,7 @@ proxies:
     type: ss
     udp: true
   - cipher: aes-256-gcm
-    name: 🌐 SS-017 | daily_free_v
+    name: 🇫🇷 SS-017 | carry
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.45
@@ -240,42 +240,38 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇯🇵 VLESS-001 | clashfree
-      - 🇺🇸 VLESS-002 | clash-node-s
-      - 🇯🇵 VLESS-003 | clashfree
-      - 🌐 SS-004 | daily_free_v
-      - 🇺🇸 VMESS-005 | MetaFetch
-      - 🇰🇷 VMESS-006 | MetaFetch
-      - 🌐 VMESS-007 | MetaFetch
-      - 🇨🇦 VMESS-008 | MetaFetch
-      - 🇩🇪 VLESS-009 | AutoMergePub
-      - 🇳🇱 VLESS-010 | AutoMergePub
-      - 🌐 SS-011 | daily_free_v
-      - 🌐 VLESS-012 | AutoMergePub
-      - 🇺🇸 VLESS-013 | AutoMergePub
-      - 🌐 SS-014 | daily_free_v
-      - 🌐 SS-015 | daily_free_v
-      - 🌐 SS-016 | daily_free_v
-      - 🌐 SS-017 | daily_free_v
+      - 🇫🇷 VLESS-001 | carry
+      - 🇩🇪 VLESS-002 | carry
+      - 🇫🇷 VLESS-003 | carry
+      - 🇫🇷 SS-004 | carry
+      - 🌐 VMESS-005 | carry
+      - 🌐 VMESS-006 | carry
+      - 🌐 VMESS-007 | carry
+      - 🌐 VMESS-008 | carry
+      - 🇦🇺 VLESS-009 | carry
+      - 🇦🇺 VLESS-010 | carry
+      - 🇫🇷 SS-011 | carry
+      - 🇦🇺 VLESS-012 | carry
+      - 🇦🇺 VLESS-013 | carry
+      - 🇫🇷 SS-014 | carry
+      - 🇫🇷 SS-015 | carry
+      - 🇫🇷 SS-016 | carry
+      - 🇫🇷 SS-017 | carry
     url: https://github.com
     interval: 300
     tolerance: 50
     lazy: false
-  - name: 🇯🇵 节点
+  - name: 🇫🇷 节点
     type: url-test
     proxies:
-      - 🇯🇵 VLESS-001 | clashfree
-      - 🇯🇵 VLESS-003 | clashfree
-    url: https://github.com
-    interval: 300
-    tolerance: 50
-    lazy: false
-  - name: 🇺🇸 节点
-    type: url-test
-    proxies:
-      - 🇺🇸 VLESS-002 | clash-node-s
-      - 🇺🇸 VMESS-005 | MetaFetch
-      - 🇺🇸 VLESS-013 | AutoMergePub
+      - 🇫🇷 VLESS-001 | carry
+      - 🇫🇷 VLESS-003 | carry
+      - 🇫🇷 SS-004 | carry
+      - 🇫🇷 SS-011 | carry
+      - 🇫🇷 SS-014 | carry
+      - 🇫🇷 SS-015 | carry
+      - 🇫🇷 SS-016 | carry
+      - 🇫🇷 SS-017 | carry
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -283,14 +279,21 @@ proxy-groups:
   - name: 🌐 节点
     type: url-test
     proxies:
-      - 🌐 SS-004 | daily_free_v
-      - 🌐 VMESS-007 | MetaFetch
-      - 🌐 SS-011 | daily_free_v
-      - 🌐 VLESS-012 | AutoMergePub
-      - 🌐 SS-014 | daily_free_v
-      - 🌐 SS-015 | daily_free_v
-      - 🌐 SS-016 | daily_free_v
-      - 🌐 SS-017 | daily_free_v
+      - 🌐 VMESS-005 | carry
+      - 🌐 VMESS-006 | carry
+      - 🌐 VMESS-007 | carry
+      - 🌐 VMESS-008 | carry
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇦🇺 节点
+    type: url-test
+    proxies:
+      - 🇦🇺 VLESS-009 | carry
+      - 🇦🇺 VLESS-010 | carry
+      - 🇦🇺 VLESS-012 | carry
+      - 🇦🇺 VLESS-013 | carry
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -298,32 +301,31 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     proxies:
-      - 🇯🇵 VLESS-001 | clashfree
-      - 🇺🇸 VLESS-002 | clash-node-s
-      - 🇯🇵 VLESS-003 | clashfree
-      - 🌐 SS-004 | daily_free_v
-      - 🇺🇸 VMESS-005 | MetaFetch
-      - 🇰🇷 VMESS-006 | MetaFetch
-      - 🌐 VMESS-007 | MetaFetch
-      - 🇨🇦 VMESS-008 | MetaFetch
-      - 🇩🇪 VLESS-009 | AutoMergePub
-      - 🇳🇱 VLESS-010 | AutoMergePub
-      - 🌐 SS-011 | daily_free_v
-      - 🌐 VLESS-012 | AutoMergePub
-      - 🇺🇸 VLESS-013 | AutoMergePub
-      - 🌐 SS-014 | daily_free_v
-      - 🌐 SS-015 | daily_free_v
-      - 🌐 SS-016 | daily_free_v
-      - 🌐 SS-017 | daily_free_v
+      - 🇫🇷 VLESS-001 | carry
+      - 🇩🇪 VLESS-002 | carry
+      - 🇫🇷 VLESS-003 | carry
+      - 🇫🇷 SS-004 | carry
+      - 🌐 VMESS-005 | carry
+      - 🌐 VMESS-006 | carry
+      - 🌐 VMESS-007 | carry
+      - 🌐 VMESS-008 | carry
+      - 🇦🇺 VLESS-009 | carry
+      - 🇦🇺 VLESS-010 | carry
+      - 🇫🇷 SS-011 | carry
+      - 🇦🇺 VLESS-012 | carry
+      - 🇦🇺 VLESS-013 | carry
+      - 🇫🇷 SS-014 | carry
+      - 🇫🇷 SS-015 | carry
+      - 🇫🇷 SS-016 | carry
+      - 🇫🇷 SS-017 | carry
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - ☑️ 手动切换
-      - 🛟 兜底直连
-      - 🇯🇵 节点
-      - 🇺🇸 节点
+      - 🇫🇷 节点
       - 🌐 节点
+      - 🇦🇺 节点
   - name: 🤖 OpenAi
     type: select
     proxies:
