@@ -2671,6 +2671,8 @@ proxy-groups:
       - 🇺🇸 US VLESS-72 | free-nodes
       - 🇺🇸 US VLESS-75 | free-nodes
 rules:
+  - DOMAIN-SUFFIX,opencode.ai,🎯 全球直连
+  - DOMAIN-KEYWORD,opencode,🎯 全球直连
   - DOMAIN,localhost,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
