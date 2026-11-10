@@ -2671,16 +2671,74 @@ proxy-groups:
       - 🇺🇸 US VLESS-72 | free-nodes
       - 🇺🇸 US VLESS-75 | free-nodes
 rules:
+  - DOMAIN,localhost,🎯 全球直连
+  - DOMAIN-SUFFIX,local,🎯 全球直连
+  - DOMAIN-SUFFIX,lan,🎯 全球直连
+  - DOMAIN-SUFFIX,cn,🎯 全球直连
+  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
+  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
+  - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
+  - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
+  - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
+  - DOMAIN-SUFFIX,pypi.org,🎯 全球直连
+  - DOMAIN-SUFFIX,pythonhosted.org,🎯 全球直连
+  - DOMAIN-SUFFIX,registry.npmjs.org,🎯 全球直连
+  - DOMAIN-SUFFIX,npmjs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,npmjs.org,🎯 全球直连
+  - DOMAIN-SUFFIX,nodejs.org,🎯 全球直连
+  - DOMAIN-SUFFIX,npmmirror.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cloudflare.com,🎯 全球直连
+  - DOMAIN,gh-proxy.com,🎯 全球直连
+  - DOMAIN,ghproxy.net,🎯 全球直连
+  - DOMAIN-SUFFIX,gitclone.com,🎯 全球直连
+  - DOMAIN-SUFFIX,gitee.com,🎯 全球直连
+  - DOMAIN-SUFFIX,giteeusercontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bing.com,🎯 全球直连
+  - DOMAIN-SUFFIX,deepseek.com,🎯 全球直连
+  - DOMAIN-SUFFIX,api.deepseek.com,🎯 全球直连
+  - DOMAIN-SUFFIX,volces.com,🎯 全球直连
+  - DOMAIN-SUFFIX,volcengine.com,🎯 全球直连
+  - DOMAIN-SUFFIX,volcengineapi.com,🎯 全球直连
+  - DOMAIN-SUFFIX,qcloudimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,qpic.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,gtimg.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,weixin.com,🎯 全球直连
+  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
+  - DOMAIN-SUFFIX,minimaxi.com,🎯 全球直连
+  - DOMAIN-SUFFIX,stepfun.com,🎯 全球直连
+  - DOMAIN-SUFFIX,sensetime.com,🎯 全球直连
+  - DOMAIN-SUFFIX,baichuan-ai.com,🎯 全球直连
   - DOMAIN-SUFFIX,github.com,🚀 节点选择
   - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
   - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
   - DOMAIN-SUFFIX,github.io,🚀 节点选择
-  - DOMAIN,gh-proxy.com,🎯 全球直连
-  - DOMAIN,ghproxy.net,🎯 全球直连
-  - DOMAIN-SUFFIX,gitee.com,🎯 全球直连
-  - DOMAIN-SUFFIX,giteeusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,deepseek.com,🎯 全球直连
-  - DOMAIN-SUFFIX,api.deepseek.com,🎯 全球直连
+  - DOMAIN-SUFFIX,github.dev,🚀 节点选择
+  - DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择
+  - DOMAIN-SUFFIX,unpkg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,huggingface.co,🚀 节点选择
+  - DOMAIN-SUFFIX,bitbucket.org,🚀 节点选择
+  - DOMAIN-SUFFIX,codeberg.org,🚀 节点选择
+  - DOMAIN-SUFFIX,registry-1.docker.io,🚀 节点选择
+  - DOMAIN-SUFFIX,ghcr.io,🚀 节点选择
+  - DOMAIN-SUFFIX,registry.k8s.io,🚀 节点选择
+  - DOMAIN-SUFFIX,golang.org,🚀 节点选择
+  - DOMAIN-SUFFIX,go.dev,🚀 节点选择
+  - DOMAIN-SUFFIX,proxy.golang.org,🚀 节点选择
+  - DOMAIN-SUFFIX,sum.golang.org,🚀 节点选择
+  - DOMAIN-SUFFIX,rust-lang.org,🚀 节点选择
+  - DOMAIN-SUFFIX,crates.io,🚀 节点选择
+  - DOMAIN-SUFFIX,static.crates.io,🚀 节点选择
+  - DOMAIN-SUFFIX,docs.rs,🚀 节点选择
+  - DOMAIN-SUFFIX,stackexchange.com,🚀 节点选择
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,whatsapp.com,🚀 节点选择
+  - DOMAIN-SUFFIX,whatsapp.net,🚀 节点选择
   - DOMAIN-SUFFIX,play.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,play-fe.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,play-lh.googleusercontent.com,🚀 节点选择
