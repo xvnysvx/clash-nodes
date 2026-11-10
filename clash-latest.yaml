@@ -2741,6 +2741,53 @@ rules:
   - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
   - DOMAIN-SUFFIX,whatsapp.com,🚀 节点选择
   - DOMAIN-SUFFIX,whatsapp.net,🚀 节点选择
+  - DOMAIN-SUFFIX,github.blog,🚀 节点选择
+  - DOMAIN-SUFFIX,githubnext.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,hub.docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
+  - DOMAIN-SUFFIX,perplexity.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,poe.com,🚀 节点选择
+  - DOMAIN-SUFFIX,midjourney.com,🚀 节点选择
+  - DOMAIN-SUFFIX,civitai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
+  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+  - DOMAIN-SUFFIX,notion.site,🚀 节点选择
+  - DOMAIN-SUFFIX,figma.com,🚀 节点选择
+  - DOMAIN-SUFFIX,slack.com,🚀 节点选择
+  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
+  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
+  - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
+  - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
+  - DOMAIN-SUFFIX,quora.com,🚀 节点选择
+  - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
+  - DOMAIN-SUFFIX,news.ycombinator.com,🚀 节点选择
+  - DOMAIN-SUFFIX,ycombinator.com,🚀 节点选择
+  - DOMAIN-SUFFIX,producthunt.com,🚀 节点选择
+  - DOMAIN-SUFFIX,nytimes.com,🚀 节点选择
+  - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cnn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,reuters.com,🚀 节点选择
+  - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,wsj.com,🚀 节点选择
+  - DOMAIN-SUFFIX,theguardian.com,🚀 节点选择
+  - DOMAIN-SUFFIX,wired.com,🚀 节点选择
+  - DOMAIN-SUFFIX,theverge.com,🚀 节点选择
+  - DOMAIN-SUFFIX,techcrunch.com,🚀 节点选择
+  - DOMAIN-SUFFIX,kaggle.com,🚀 节点选择
+  - DOMAIN-SUFFIX,coursera.org,🚀 节点选择
+  - DOMAIN-SUFFIX,udemy.com,🚀 节点选择
+  - DOMAIN-SUFFIX,udacity.com,🚀 节点选择
+  - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
+  - DOMAIN-SUFFIX,tiktok.com,🚀 节点选择
+  - DOMAIN-SUFFIX,line.me,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
+  - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+  - DOMAIN-SUFFIX,disneyplus.com,🚀 节点选择
+  - DOMAIN-SUFFIX,primevideo.com,🚀 节点选择
+  - DOMAIN-SUFFIX,hbomax.com,🚀 节点选择
+  - DOMAIN-SUFFIX,archive.org,🚀 节点选择
   - DOMAIN-SUFFIX,play.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,play-fe.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,play-lh.googleusercontent.com,🚀 节点选择
@@ -14111,4 +14158,4 @@ rules:
   - IP-CIDR,101.198.208.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
+  - MATCH,🎯 全球直连
