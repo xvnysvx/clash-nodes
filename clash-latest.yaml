@@ -1791,9 +1791,19 @@ proxies:
       path: def23855529bf8342afdfd4414b14616
       host: 1ef92476s124.kuback.top
 proxy-groups:
+  - name: 🛟 兜底直连
+    type: fallback
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+    url: https://www.baidu.com
+    interval: 120
+    timeout: 5000
+    lazy: false
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🛟 兜底直连
       - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
