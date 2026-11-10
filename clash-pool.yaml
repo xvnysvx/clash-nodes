@@ -257,7 +257,7 @@ proxy-groups:
       - 🌐 SS-015 | daily_free_v
       - 🌐 SS-016 | daily_free_v
       - 🌐 SS-017 | daily_free_v
-    url: http://www.gstatic.com/generate_204
+    url: https://github.com
     interval: 300
     tolerance: 50
     lazy: false
@@ -266,7 +266,7 @@ proxy-groups:
     proxies:
       - 🇯🇵 VLESS-001 | clashfree
       - 🇯🇵 VLESS-003 | clashfree
-    url: http://www.gstatic.com/generate_204
+    url: https://github.com
     interval: 300
     tolerance: 50
     lazy: false
@@ -276,7 +276,7 @@ proxy-groups:
       - 🇺🇸 VLESS-002 | clash-node-s
       - 🇺🇸 VMESS-005 | MetaFetch
       - 🇺🇸 VLESS-013 | AutoMergePub
-    url: http://www.gstatic.com/generate_204
+    url: https://github.com
     interval: 300
     tolerance: 50
     lazy: false
@@ -291,7 +291,7 @@ proxy-groups:
       - 🌐 SS-015 | daily_free_v
       - 🌐 SS-016 | daily_free_v
       - 🌐 SS-017 | daily_free_v
-    url: http://www.gstatic.com/generate_204
+    url: https://github.com
     interval: 300
     tolerance: 50
     lazy: false
@@ -318,12 +318,12 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🛟 兜底直连
       - ♻️ 自动选择
+      - ☑️ 手动切换
+      - 🛟 兜底直连
       - 🇯🇵 节点
       - 🇺🇸 节点
       - 🌐 节点
-      - ☑️ 手动切换
   - name: 🤖 OpenAi
     type: select
     proxies:
