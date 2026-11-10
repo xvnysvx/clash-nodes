@@ -2788,6 +2788,7 @@ rules:
   - DOMAIN-SUFFIX,primevideo.com,🚀 节点选择
   - DOMAIN-SUFFIX,hbomax.com,🚀 节点选择
   - DOMAIN-SUFFIX,archive.org,🚀 节点选择
+  - RULE-SET,dsh-auto,🚀 节点选择
   - DOMAIN-SUFFIX,play.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,play-fe.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,play-lh.googleusercontent.com,🚀 节点选择
@@ -14159,3 +14160,12 @@ rules:
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🎯 全球直连
+rule-providers:
+  dsh-auto:
+    type: http
+    behavior: domain
+    format: yaml
+    url: http://127.0.0.1:8800/rules-auto.yaml
+    path: ./dsh-auto.yaml
+    interval: 600
+    proxy: DIRECT
