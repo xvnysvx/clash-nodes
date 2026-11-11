@@ -2743,6 +2743,11 @@ proxy-groups:
       - 🇺🇸 US VLESS-99 | free-nodes
       - 🇺🇸 US VLESS-100 | free-nodes
 rules:
+  - DOMAIN-SUFFIX,dash.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,turnstile.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,pages.dev,🎯 全球直连
+  - DOMAIN-SUFFIX,workers.dev,🎯 全球直连
   - DOMAIN-SUFFIX,opencode.ai,🎯 全球直连
   - DOMAIN-KEYWORD,opencode,🎯 全球直连
   - DOMAIN,localhost,🎯 全球直连
@@ -13264,7 +13269,6 @@ rules:
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
   - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
