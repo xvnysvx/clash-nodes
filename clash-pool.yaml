@@ -23,62 +23,32 @@ proxies:
       path: 356257a80f246d77bb43c7d9d7f98d05
       host: u695098u6b0550c8s2521.xxti.top
   - name: 🌐 SS-002 | MetaFetch
-    server: 202.50.253.54
+    server: 202.50.253.63
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: 🌐 SS-003 | MetaFetch
-    server: 202.50.253.45
-    port: 19999
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: 🌐 SS-004 | MetaFetch
     server: 202.50.253.36
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 🌐 SS-005 | MetaFetch
-    server: 202.50.253.81
-    port: 19999
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: 🌐 SS-006 | MetaFetch
+  - name: 🌐 SS-004 | MetaFetch
     server: 202.50.253.90
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 🇯🇵 VLESS-007 | clashfree
-    server: s2503.ccgfw.online
-    port: 443
-    type: vless
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    alpn:
-      - h2
-      - http/1.1
-    tfo: false
-    flow: xtls-rprx-vision
-    skip-cert-verify: false
-    servername: u695098u093da7d1s2502.xxti.top
-    client-fingerprint: firefox
-    network: tcp
-  - cipher: aes-256-gcm
-    name: 🌐 SS-008 | daily_free_v
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 🌐 SS-005 | MetaFetch
+    server: 202.50.253.45
     port: 19999
-    server: 202.50.253.63
-    sub_tag: A004-260618
     type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
 proxy-groups:
   - name: 🛟 兜底直连
@@ -97,18 +67,6 @@ proxy-groups:
       - 🌐 SS-003 | MetaFetch
       - 🌐 SS-004 | MetaFetch
       - 🌐 SS-005 | MetaFetch
-      - 🌐 SS-006 | MetaFetch
-      - 🇯🇵 VLESS-007 | clashfree
-      - 🌐 SS-008 | daily_free_v
-    url: https://github.com
-    interval: 300
-    tolerance: 50
-    lazy: false
-  - name: 🇯🇵 节点
-    type: url-test
-    proxies:
-      - 🇯🇵 VLESS-001 | clashfree
-      - 🇯🇵 VLESS-007 | clashfree
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -120,8 +78,6 @@ proxy-groups:
       - 🌐 SS-003 | MetaFetch
       - 🌐 SS-004 | MetaFetch
       - 🌐 SS-005 | MetaFetch
-      - 🌐 SS-006 | MetaFetch
-      - 🌐 SS-008 | daily_free_v
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -134,15 +90,11 @@ proxy-groups:
       - 🌐 SS-003 | MetaFetch
       - 🌐 SS-004 | MetaFetch
       - 🌐 SS-005 | MetaFetch
-      - 🌐 SS-006 | MetaFetch
-      - 🇯🇵 VLESS-007 | clashfree
-      - 🌐 SS-008 | daily_free_v
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🛟 兜底直连
       - ♻️ 自动选择
-      - 🇯🇵 节点
       - 🌐 节点
       - ☑️ 手动切换
   - name: 🤖 OpenAi
@@ -215,6 +167,11 @@ proxy-groups:
       - REJECT
       - DIRECT
 rules:
+  - DOMAIN-SUFFIX,dash.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,turnstile.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,pages.dev,🎯 全球直连
+  - DOMAIN-SUFFIX,workers.dev,🎯 全球直连
   - DOMAIN-SUFFIX,opencode.ai,🎯 全球直连
   - DOMAIN-KEYWORD,opencode,🎯 全球直连
   - DOMAIN,localhost,🎯 全球直连
@@ -10736,7 +10693,6 @@ rules:
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
   - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
