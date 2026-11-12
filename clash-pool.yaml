@@ -5,37 +5,99 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 🇯🇵 VLESS-001 | clashfree
-    server: s2523.fuhuovps.xyz
-    port: 443
-    type: vless
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    alpn:
-      - h2
-      - http/1.1
-    tfo: false
-    skip-cert-verify: false
-    servername: u695098u6b0550c8s2521.xxti.top
-    client-fingerprint: firefox
-    network: xhttp
-    xhttp-opts:
-      path: 356257a80f246d77bb43c7d9d7f98d05
-      host: u695098u6b0550c8s2521.xxti.top
-  - name: 🌐 SS-002 | MetaFetch
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-01 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.81
+    sub_tag: A004-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-02 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
     server: 202.50.253.63
-    port: 19999
+    sub_tag: A004-260618
     type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 🌐 SS-003 | MetaFetch
+  - cipher: aes-256-gcm
+    name: 🌐 SS-03 | daily_free_v
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.18
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-04 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.54
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-05 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
     server: 202.50.253.45
-    port: 19999
+    sub_tag: A004-260618
     type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-06 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.90
+    sub_tag: C001-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🌐 SS-07 | daily_free_v
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.27
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-08 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.36
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🌐 SS-09 | daily_free_v
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.99
+    sub_tag: A004-260618
+    type: ss
+    udp: true
+  - cipher: aes-256-gcm
+    name: 🌐 SS-10 | daily_free_v
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.72
+    sub_tag: A004-260618
+    type: ss
+    udp: true
+  - client-fingerprint: firefox
+    name: 🇦🇺 VLESS-11 | verified
+    network: xhttp
+    port: 443
+    server: 193.160.208.240
+    servername: 193.160.208.240
+    tls: true
+    type: vless
+    udp: true
+    uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+    xhttp-opts:
+      mode: auto
+      path: /assets/twru01/
 proxy-groups:
   - name: 🛟 兜底直连
     type: fallback
@@ -48,9 +110,30 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇯🇵 VLESS-001 | clashfree
-      - 🌐 SS-002 | MetaFetch
-      - 🌐 SS-003 | MetaFetch
+      - 🇫🇷 SS-01 | verified
+      - 🇫🇷 SS-02 | verified
+      - 🌐 SS-03 | daily_free_v
+      - 🇫🇷 SS-04 | verified
+      - 🇫🇷 SS-05 | verified
+      - 🇫🇷 SS-06 | verified
+      - 🌐 SS-07 | daily_free_v
+      - 🇫🇷 SS-08 | verified
+      - 🌐 SS-09 | daily_free_v
+      - 🌐 SS-10 | daily_free_v
+      - 🇦🇺 VLESS-11 | verified
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇫🇷 节点
+    type: url-test
+    proxies:
+      - 🇫🇷 SS-01 | verified
+      - 🇫🇷 SS-02 | verified
+      - 🇫🇷 SS-04 | verified
+      - 🇫🇷 SS-05 | verified
+      - 🇫🇷 SS-06 | verified
+      - 🇫🇷 SS-08 | verified
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -58,8 +141,10 @@ proxy-groups:
   - name: 🌐 节点
     type: url-test
     proxies:
-      - 🌐 SS-002 | MetaFetch
-      - 🌐 SS-003 | MetaFetch
+      - 🌐 SS-03 | daily_free_v
+      - 🌐 SS-07 | daily_free_v
+      - 🌐 SS-09 | daily_free_v
+      - 🌐 SS-10 | daily_free_v
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -67,14 +152,23 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     proxies:
-      - 🇯🇵 VLESS-001 | clashfree
-      - 🌐 SS-002 | MetaFetch
-      - 🌐 SS-003 | MetaFetch
+      - 🇫🇷 SS-01 | verified
+      - 🇫🇷 SS-02 | verified
+      - 🌐 SS-03 | daily_free_v
+      - 🇫🇷 SS-04 | verified
+      - 🇫🇷 SS-05 | verified
+      - 🇫🇷 SS-06 | verified
+      - 🌐 SS-07 | daily_free_v
+      - 🇫🇷 SS-08 | verified
+      - 🌐 SS-09 | daily_free_v
+      - 🌐 SS-10 | daily_free_v
+      - 🇦🇺 VLESS-11 | verified
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🛟 兜底直连
       - ♻️ 自动选择
+      - 🇫🇷 节点
       - 🌐 节点
       - ☑️ 手动切换
   - name: 🤖 OpenAi
@@ -147,11 +241,6 @@ proxy-groups:
       - REJECT
       - DIRECT
 rules:
-  - DOMAIN-SUFFIX,dash.cloudflare.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
-  - DOMAIN-SUFFIX,turnstile.cloudflare.com,🚀 节点选择
-  - DOMAIN-SUFFIX,pages.dev,🎯 全球直连
-  - DOMAIN-SUFFIX,workers.dev,🎯 全球直连
   - DOMAIN-SUFFIX,opencode.ai,🎯 全球直连
   - DOMAIN-KEYWORD,opencode,🎯 全球直连
   - DOMAIN,localhost,🎯 全球直连
@@ -222,6 +311,11 @@ rules:
   - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
   - DOMAIN-SUFFIX,whatsapp.com,🚀 节点选择
   - DOMAIN-SUFFIX,whatsapp.net,🚀 节点选择
+  - DOMAIN-SUFFIX,dash.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,turnstile.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,pages.dev,🎯 全球直连
+  - DOMAIN-SUFFIX,workers.dev,🎯 全球直连
   - DOMAIN-SUFFIX,github.blog,🚀 节点选择
   - DOMAIN-SUFFIX,githubnext.com,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
@@ -9625,6 +9719,11 @@ rules:
   - DOMAIN,b4ugswhrwd.u0op6.adobestats.io,🍃 应用净化
   - DOMAIN,ow2vr73mg.u0op6.adobestats.io,🍃 应用净化
   - DOMAIN,bxx3yvikejb.u0op6.adobestats.io,🍃 应用净化
+  - DOMAIN,3ure6xx1q.bgvqb.adobestats.io,🍃 应用净化
+  - DOMAIN,oc82akam2.u0op6.adobestats.io,🍃 应用净化
+  - DOMAIN,jcxceef9xu.u0op6.adobestats.io,🍃 应用净化
+  - DOMAIN,v1alj9xr0qxh.u0op6.adobestats.io,🍃 应用净化
+  - DOMAIN,dm2rgokrftc.u0op6.adobestats.io,🍃 应用净化
   - DOMAIN-SUFFIX,tonec.com,🍃 应用净化
   - DOMAIN-SUFFIX,registeridm.com,🍃 应用净化
   - DOMAIN-SUFFIX,internetdownloadmanager.com,🍃 应用净化
@@ -10673,6 +10772,7 @@ rules:
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
   - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
