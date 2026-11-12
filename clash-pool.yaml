@@ -5,72 +5,79 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - cipher: aes-256-gcm
-    name: 🇫🇷 SS-01 | verified
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.81
-    sub_tag: A004-260618
+  - name: 🇭🇰 SS-01 | MetaFetch
     type: ss
+    server: c17b957c5a76ec76.lebufflonfermegroup.us
+    port: 40010
+    cipher: aes-128-gcm
+    password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
     udp: true
-  - cipher: aes-256-gcm
-    name: 🇫🇷 SS-02 | verified
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.63
-    sub_tag: A004-260618
+  - name: 🇭🇰 SS-02 | MetaFetch
     type: ss
+    server: c17b957c5a76ec76.lebufflonfermegroup.us
+    port: 40011
+    cipher: aes-128-gcm
+    password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
     udp: true
-  - cipher: aes-256-gcm
-    name: 🌐 SS-03 | daily_free_v
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.18
+  - auth: abedf59203ff9523
+    name: 🇯🇵 HYSTERIA2-03 | daily_free_v
+    obfs: salamander
+    obfs-password: ce8a8b39835f0ce5340cf548892e8e71
+    password: abedf59203ff9523
+    port: 17826
+    ports: 17826,20000-40000
+    server: 138.2.37.59
+    skip-cert-verify: true
+    sni: www.bing.com
+    sub_tag: P002-260618
+    type: hysteria2
+    udp: true
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    fingerprint: 67fa1e374feaeb232157317d6ace682475cb1a826e0cf8657151a254681aed62
+    name: 🇳🇱 VLESS-04 | daily_free_v
+    network: xhttp
+    port: 443
+    server: 94.241.172.107
     sub_tag: B007-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+    xhttp-opts:
+      mode: packet-up
+      path: /assets/nl02/
+    xudp: true
+    packet-encoding: xudp
+    servername: 94.241.172.107
+  - name: 🇫🇷 SS-05 | MetaFetch
     type: ss
+    server: c17b957c5a76ec76.lebufflonfermegroup.us
+    port: 21191
+    cipher: aes-256-gcm
+    password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
+    udp: true
+  - name: 🇺🇸 ANYTLS-06 | daily_free_v
+    password: 0324fbc29561
+    port: 443
+    server: sdf65h46wr.df6h451rh.xin
+    servername: images.ctfassets.net
+    skip-cert-verify: true
+    sni: images.ctfassets.net
+    type: anytls
+    udp: true
+  - name: 🌐 SS-07 | MetaFetch
+    type: ss
+    server: c17b957c5a76ec76.lebufflonfermegroup.us
+    port: 35000
+    cipher: aes-128-gcm
+    password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
     udp: true
   - cipher: aes-256-gcm
-    name: 🇫🇷 SS-04 | verified
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.54
-    sub_tag: B007-260618
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇫🇷 SS-05 | verified
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.45
-    sub_tag: A004-260618
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇫🇷 SS-06 | verified
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.90
-    sub_tag: C001-260618
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🌐 SS-07 | daily_free_v
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.27
-    sub_tag: B007-260618
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🇫🇷 SS-08 | verified
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.36
-    sub_tag: B007-260618
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🌐 SS-09 | daily_free_v
+    name: 🇫🇷 SS-08 | pool
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.99
@@ -78,15 +85,455 @@ proxies:
     type: ss
     udp: true
   - cipher: aes-256-gcm
-    name: 🌐 SS-10 | daily_free_v
+    name: 🇫🇷 SS-09 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.36
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇺🇸 VLESS-10 | daily_free_v
+    network: tcp
+    port: 8443
+    reality-opts:
+      public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+      short-id: 4ad2e4e660550e43
+    server: 156.229.167.109
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+    xudp: true
+    packet-encoding: xudp
+    servername: github.githubassets.com
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-11 | pool
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.72
     sub_tag: A004-260618
     type: ss
     udp: true
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-12 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.45
+    sub_tag: A004-260618
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    encryption: none
+    fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+    name: 🇺🇸 VLESS-13 | daily_free_v
+    network: ws
+    port: 443
+    server: 199.232.78.160
+    sub_tag: S004-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 97e0ea78-67ae-4984-8a14-a7d1a51e58de
+    ws-opts:
+      headers:
+        Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
+        User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+      path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    xudp: true
+    packet-encoding: xudp
+    servername: cdn.akamai.steamstatic.com
+  - alpn:
+      - h2
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇳🇱 VLESS-14 | daily_free_v
+    network: xhttp
+    port: 443
+    server: dey.lnmarketplace.net
+    sub_tag: B007-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+    xhttp-opts:
+      mode: stream-one
+      path: /kavir
+    xudp: true
+    packet-encoding: xudp
+    servername: dey.lnmarketplace.net
+  - client-fingerprint: chrome
+    encryption: none
+    fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+    name: 🇺🇸 VLESS-15 | daily_free_v
+    network: ws
+    port: 443
+    server: wwww.qarvian.ir
+    sub_tag: S004-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 97e0ea78-67ae-4984-8a14-a7d1a51e58de
+    ws-opts:
+      headers:
+        Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: cdn.akamai.steamstatic.com
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-16 | pool
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.18
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - alpn:
+      - h2
+    client-fingerprint: edge
+    encryption: none
+    grpc-opts:
+      grpc-service-name: grpc
+    name: 🌐 VLESS-17 | daily_free_v
+    network: grpc
+    port: 443
+    server: 88.80.150.15
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
+    xudp: true
+    packet-encoding: xudp
+    servername: bg2.oncloudvpn.com
+  - name: 🇺🇸 HYSTERIA2-18 | daily_free_v
+    password: eb9888f5-66ec-481d-a82f-0f4e6277f098
+    port: 51000
+    server: 129.146.124.201
+    skip-cert-verify: true
+    sni: cn.cremedelamer.com
+    sub_tag: R002-260618
+    type: hysteria2
+    x-toolall-mihomo: true
+    udp: true
+  - client-fingerprint: chrome
+    encryption: none
+    fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+    name: 🇺🇸 VLESS-19 | daily_free_v
+    network: ws
+    port: 443
+    server: 146.75.59.186
+    sub_tag: B007-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 97e0ea78-67ae-4984-8a14-a7d1a51e58de
+    ws-opts:
+      headers:
+        Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
+        User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: cdn.akamai.steamstatic.com
   - client-fingerprint: firefox
-    name: 🇦🇺 VLESS-11 | verified
+    encryption: none
+    name: 🇩🇪 VLESS-20 | daily_free_v
+    network: ws
+    port: 443
+    server: 188.225.37.43
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+    ws-opts:
+      headers:
+        Host: torvani.cyou
+        User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+      path: /api/boards/live
+    xudp: true
+    packet-encoding: xudp
+    servername: torvani.cyou
+  - client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: cache.sync.v1
+    name: 🇩🇪 VLESS-21 | daily_free_v
+    network: grpc
+    port: 443
+    server: 188.225.73.41
+    sub_tag: K001-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+    xudp: true
+    packet-encoding: xudp
+    servername: cadrin.wtf
+  - client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: mobile.api.Event
+    name: 🇷🇺 VLESS-22 | FreeSubsChec
+    network: grpc
+    port: 443
+    server: 201.24.116.192
+    tls: true
+    type: vless
+    udp: true
+    uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+    xudp: true
+    servername: vps3.nemnogogo.com
+  - client-fingerprint: firefox
+    encryption: none
+    fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+    name: 🇩🇪 VLESS-23 | daily_free_v
+    network: xhttp
+    port: 443
+    server: websaitiran.zorfel.ir
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: bf2d7dcc-9240-486e-9037-670798ac3ac5
+    xhttp-opts:
+      host: v2German2053as.global.ssl.fastly.net
+      mode: auto
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: cdn.akamai.steamstatic.com
+  - name: 🌐 VLESS-24 | MetaFetch
+    server: 9.247.174.134
+    port: 8443
+    type: vless
+    uuid: 585a421d-d782-4420-912e-dd58ff5966d7
+    tls: true
+    udp: true
+    sni: play.googleapis.com
+    servername: play.googleapis.com
+    client-fingerprint: chrome
+    network: tcp
+    reality-opts:
+      public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+      short-id: 974f7f8f
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-25 | pool
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.27
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - alpn:
+      - h2
+    client-fingerprint: chrome
+    encryption: none
+    name: 🌐 VLESS-26 | daily_free_v
+    network: xhttp
+    port: 443
+    server: api.ferrin.uk
+    sub_tag: B007-260618
+    tls: true
+    type: vless
+    udp: true
+    uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
+    xhttp-opts:
+      mode: stream-one
+      path: /es
+      reuse-settings:
+        h-max-reusable-secs: 1140-1260
+        max-connections: '3'
+    xudp: true
+    packet-encoding: xudp
+    servername: 7d1a74fd.ferrin.uk
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-27 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.90
+    sub_tag: C001-260618
+    type: ss
+    udp: true
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: '55'
+    name: 🇺🇸 HYSTERIA-28 | daily_free_v
+    password: dongtaiwang.com
+    port: 20022
+    server: 137.175.82.44
+    servername: bing.com
+    skip-cert-verify: true
+    sni: bing.com
+    sub_tag: R002-260618
+    type: hysteria
+    up: '11'
+    x-toolall-mihomo: true
+    udp: true
+  - alpn:
+      - h2
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: mobile.api.Event
+    name: 🌐 VLESS-29 | FreeSubsChec
+    network: grpc
+    port: 443
+    server: vps3.nemnogogo.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+    xudp: true
+    servername: vps3.nemnogogo.com
+  - alpn:
+      - h3
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+    down: '55'
+    name: 🇺🇸 HYSTERIA-30 | daily_free_v
+    password: github.com/Alvin9999-newpac/fanqiang
+    port: 22335
+    server: 198.200.57.142
+    servername: bing.com
+    skip-cert-verify: true
+    sni: bing.com
+    sub_tag: P002-260618
+    type: hysteria
+    up: '11'
+    udp: true
+  - client-fingerprint: firefox
+    encryption: none
+    name: 🇳🇱 VLESS-31 | daily_free_v
+    network: xhttp
+    port: 443
+    reality-opts:
+      public-key: dtO7khFLUkpFDQOtNzo4Th4hJKLoPSY2VtD_9k4Hgiw
+      short-id: 7b2b1a14a6e0630d
+    server: fc82dfx.nl8.h1clayd.click
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    xhttp-opts:
+      mode: auto
+      path: /0616f2d729aa
+    xudp: true
+    packet-encoding: xudp
+    servername: fc82dfx.nl8.h1clayd.click
+  - alpn:
+      - h2
+    client-fingerprint: ios
+    grpc-opts:
+      grpc-service-name: mobile.api.Event
+    name: 🇷🇺 VLESS-32 | FreeSubsChec
+    network: grpc
+    port: 443
+    server: vps2.nemnogogo.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+    xudp: true
+    servername: vps2.nemnogogo.com
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-33 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.63
+    sub_tag: A004-260618
+    type: ss
+    udp: true
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: '55'
+    name: 🇫🇷 HYSTERIA-34 | daily_free_v
+    password: dongtaiwang.com
+    port: 36699
+    server: 163.172.117.163
+    servername: bing.com
+    skip-cert-verify: true
+    sni: bing.com
+    sub_tag: P002-260618
+    type: hysteria
+    up: '11'
+    udp: true
+  - alpn:
+      - h3
+    client-fingerprint: chrome
+    encryption: none
+    name: 🇫🇷 VLESS-35 | daily_free_v
+    network: xhttp
+    port: 443
+    server: 151.101.36.88
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+    xhttp-opts:
+      host: ovd5.global.ssl.fastly.net
+      mode: auto
+      path: /
+    xudp: true
+    packet-encoding: xudp
+    servername: accounts.fastly.com
+  - cipher: aes-256-gcm
+    name: 🇫🇷 SS-36 | verified
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.54
+    sub_tag: B007-260618
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    name: 🇹🇼 VLESS-37 | daily_free_v
+    network: tcp
+    port: 8443
+    reality-opts:
+      public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+      short-id: 4ad2e4e660550e43
+    server: 83.147.13.74
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+    xudp: true
+    packet-encoding: xudp
+    servername: github.githubassets.com
+  - client-fingerprint: chrome
+    name: 🌐 TROJAN-38 | daily_free_v
+    network: tcp
+    password: d9064589-74af-432a-9390-5d8a9da281bf
+    port: 20051
+    server: sclass-c2.catcat321.com
+    skip-cert-verify: true
+    sni: hk.catxstar.com
+    sub_tag: C002-260622
+    type: trojan
+    udp: true
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: '55'
+    name: 🇫🇷 HYSTERIA-39 | daily_free_v
+    password: dongtaiwang.com
+    port: 24667
+    server: 62.210.28.175
+    servername: bing.com
+    skip-cert-verify: true
+    sni: bing.com
+    sub_tag: R002-260618
+    type: hysteria
+    up: '11'
+    x-toolall-mihomo: true
+    udp: true
+  - client-fingerprint: firefox
+    name: 🇦🇺 VLESS-40 | verified
     network: xhttp
     port: 443
     server: 193.160.208.240
@@ -98,6 +545,38 @@ proxies:
     xhttp-opts:
       mode: auto
       path: /assets/twru01/
+  - client-fingerprint: qq
+    encryption: none
+    flow: xtls-rprx-vision
+    name: 🇩🇪 VLESS-41 | daily_free_v
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+      short-id: ''
+    server: music.3apes.online
+    sub_tag: M003-260806
+    tls: true
+    type: vless
+    udp: true
+    uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
+    xudp: true
+    packet-encoding: xudp
+    servername: music.3apes.online
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: '55'
+    name: 🇳🇱 HYSTERIA-42 | daily_free_v
+    password: dongtaiwang.com
+    port: 54177
+    server: 5.83.129.90
+    servername: apple.com
+    skip-cert-verify: true
+    sni: apple.com
+    type: hysteria
+    up: '11'
+    udp: true
 proxy-groups:
   - name: 🛟 兜底直连
     type: fallback
@@ -110,17 +589,68 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇫🇷 SS-01 | verified
-      - 🇫🇷 SS-02 | verified
-      - 🌐 SS-03 | daily_free_v
-      - 🇫🇷 SS-04 | verified
-      - 🇫🇷 SS-05 | verified
-      - 🇫🇷 SS-06 | verified
-      - 🌐 SS-07 | daily_free_v
-      - 🇫🇷 SS-08 | verified
-      - 🌐 SS-09 | daily_free_v
-      - 🌐 SS-10 | daily_free_v
-      - 🇦🇺 VLESS-11 | verified
+      - 🇭🇰 SS-01 | MetaFetch
+      - 🇭🇰 SS-02 | MetaFetch
+      - 🇯🇵 HYSTERIA2-03 | daily_free_v
+      - 🇳🇱 VLESS-04 | daily_free_v
+      - 🇫🇷 SS-05 | MetaFetch
+      - 🇺🇸 ANYTLS-06 | daily_free_v
+      - 🌐 SS-07 | MetaFetch
+      - 🇫🇷 SS-08 | pool
+      - 🇫🇷 SS-09 | verified
+      - 🇺🇸 VLESS-10 | daily_free_v
+      - 🇫🇷 SS-11 | pool
+      - 🇫🇷 SS-12 | verified
+      - 🇺🇸 VLESS-13 | daily_free_v
+      - 🇳🇱 VLESS-14 | daily_free_v
+      - 🇺🇸 VLESS-15 | daily_free_v
+      - 🇫🇷 SS-16 | pool
+      - 🌐 VLESS-17 | daily_free_v
+      - 🇺🇸 HYSTERIA2-18 | daily_free_v
+      - 🇺🇸 VLESS-19 | daily_free_v
+      - 🇩🇪 VLESS-20 | daily_free_v
+      - 🇩🇪 VLESS-21 | daily_free_v
+      - 🇷🇺 VLESS-22 | FreeSubsChec
+      - 🇩🇪 VLESS-23 | daily_free_v
+      - 🌐 VLESS-24 | MetaFetch
+      - 🇫🇷 SS-25 | pool
+      - 🌐 VLESS-26 | daily_free_v
+      - 🇫🇷 SS-27 | verified
+      - 🇺🇸 HYSTERIA-28 | daily_free_v
+      - 🌐 VLESS-29 | FreeSubsChec
+      - 🇺🇸 HYSTERIA-30 | daily_free_v
+      - 🇳🇱 VLESS-31 | daily_free_v
+      - 🇷🇺 VLESS-32 | FreeSubsChec
+      - 🇫🇷 SS-33 | verified
+      - 🇫🇷 HYSTERIA-34 | daily_free_v
+      - 🇫🇷 VLESS-35 | daily_free_v
+      - 🇫🇷 SS-36 | verified
+      - 🇹🇼 VLESS-37 | daily_free_v
+      - 🌐 TROJAN-38 | daily_free_v
+      - 🇫🇷 HYSTERIA-39 | daily_free_v
+      - 🇦🇺 VLESS-40 | verified
+      - 🇩🇪 VLESS-41 | daily_free_v
+      - 🇳🇱 HYSTERIA-42 | daily_free_v
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇭🇰 节点
+    type: url-test
+    proxies:
+      - 🇭🇰 SS-01 | MetaFetch
+      - 🇭🇰 SS-02 | MetaFetch
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇳🇱 节点
+    type: url-test
+    proxies:
+      - 🇳🇱 VLESS-04 | daily_free_v
+      - 🇳🇱 VLESS-14 | daily_free_v
+      - 🇳🇱 VLESS-31 | daily_free_v
+      - 🇳🇱 HYSTERIA-42 | daily_free_v
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -128,12 +658,34 @@ proxy-groups:
   - name: 🇫🇷 节点
     type: url-test
     proxies:
-      - 🇫🇷 SS-01 | verified
-      - 🇫🇷 SS-02 | verified
-      - 🇫🇷 SS-04 | verified
-      - 🇫🇷 SS-05 | verified
-      - 🇫🇷 SS-06 | verified
-      - 🇫🇷 SS-08 | verified
+      - 🇫🇷 SS-05 | MetaFetch
+      - 🇫🇷 SS-08 | pool
+      - 🇫🇷 SS-09 | verified
+      - 🇫🇷 SS-11 | pool
+      - 🇫🇷 SS-12 | verified
+      - 🇫🇷 SS-16 | pool
+      - 🇫🇷 SS-25 | pool
+      - 🇫🇷 SS-27 | verified
+      - 🇫🇷 SS-33 | verified
+      - 🇫🇷 HYSTERIA-34 | daily_free_v
+      - 🇫🇷 VLESS-35 | daily_free_v
+      - 🇫🇷 SS-36 | verified
+      - 🇫🇷 HYSTERIA-39 | daily_free_v
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇺🇸 节点
+    type: url-test
+    proxies:
+      - 🇺🇸 ANYTLS-06 | daily_free_v
+      - 🇺🇸 VLESS-10 | daily_free_v
+      - 🇺🇸 VLESS-13 | daily_free_v
+      - 🇺🇸 VLESS-15 | daily_free_v
+      - 🇺🇸 HYSTERIA2-18 | daily_free_v
+      - 🇺🇸 VLESS-19 | daily_free_v
+      - 🇺🇸 HYSTERIA-28 | daily_free_v
+      - 🇺🇸 HYSTERIA-30 | daily_free_v
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -141,10 +693,32 @@ proxy-groups:
   - name: 🌐 节点
     type: url-test
     proxies:
-      - 🌐 SS-03 | daily_free_v
-      - 🌐 SS-07 | daily_free_v
-      - 🌐 SS-09 | daily_free_v
-      - 🌐 SS-10 | daily_free_v
+      - 🌐 SS-07 | MetaFetch
+      - 🌐 VLESS-17 | daily_free_v
+      - 🌐 VLESS-24 | MetaFetch
+      - 🌐 VLESS-26 | daily_free_v
+      - 🌐 VLESS-29 | FreeSubsChec
+      - 🌐 TROJAN-38 | daily_free_v
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇩🇪 节点
+    type: url-test
+    proxies:
+      - 🇩🇪 VLESS-20 | daily_free_v
+      - 🇩🇪 VLESS-21 | daily_free_v
+      - 🇩🇪 VLESS-23 | daily_free_v
+      - 🇩🇪 VLESS-41 | daily_free_v
+    url: https://github.com
+    interval: 300
+    tolerance: 50
+    lazy: false
+  - name: 🇷🇺 节点
+    type: url-test
+    proxies:
+      - 🇷🇺 VLESS-22 | FreeSubsChec
+      - 🇷🇺 VLESS-32 | FreeSubsChec
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -152,24 +726,60 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     proxies:
-      - 🇫🇷 SS-01 | verified
-      - 🇫🇷 SS-02 | verified
-      - 🌐 SS-03 | daily_free_v
-      - 🇫🇷 SS-04 | verified
-      - 🇫🇷 SS-05 | verified
-      - 🇫🇷 SS-06 | verified
-      - 🌐 SS-07 | daily_free_v
-      - 🇫🇷 SS-08 | verified
-      - 🌐 SS-09 | daily_free_v
-      - 🌐 SS-10 | daily_free_v
-      - 🇦🇺 VLESS-11 | verified
+      - 🇭🇰 SS-01 | MetaFetch
+      - 🇭🇰 SS-02 | MetaFetch
+      - 🇯🇵 HYSTERIA2-03 | daily_free_v
+      - 🇳🇱 VLESS-04 | daily_free_v
+      - 🇫🇷 SS-05 | MetaFetch
+      - 🇺🇸 ANYTLS-06 | daily_free_v
+      - 🌐 SS-07 | MetaFetch
+      - 🇫🇷 SS-08 | pool
+      - 🇫🇷 SS-09 | verified
+      - 🇺🇸 VLESS-10 | daily_free_v
+      - 🇫🇷 SS-11 | pool
+      - 🇫🇷 SS-12 | verified
+      - 🇺🇸 VLESS-13 | daily_free_v
+      - 🇳🇱 VLESS-14 | daily_free_v
+      - 🇺🇸 VLESS-15 | daily_free_v
+      - 🇫🇷 SS-16 | pool
+      - 🌐 VLESS-17 | daily_free_v
+      - 🇺🇸 HYSTERIA2-18 | daily_free_v
+      - 🇺🇸 VLESS-19 | daily_free_v
+      - 🇩🇪 VLESS-20 | daily_free_v
+      - 🇩🇪 VLESS-21 | daily_free_v
+      - 🇷🇺 VLESS-22 | FreeSubsChec
+      - 🇩🇪 VLESS-23 | daily_free_v
+      - 🌐 VLESS-24 | MetaFetch
+      - 🇫🇷 SS-25 | pool
+      - 🌐 VLESS-26 | daily_free_v
+      - 🇫🇷 SS-27 | verified
+      - 🇺🇸 HYSTERIA-28 | daily_free_v
+      - 🌐 VLESS-29 | FreeSubsChec
+      - 🇺🇸 HYSTERIA-30 | daily_free_v
+      - 🇳🇱 VLESS-31 | daily_free_v
+      - 🇷🇺 VLESS-32 | FreeSubsChec
+      - 🇫🇷 SS-33 | verified
+      - 🇫🇷 HYSTERIA-34 | daily_free_v
+      - 🇫🇷 VLESS-35 | daily_free_v
+      - 🇫🇷 SS-36 | verified
+      - 🇹🇼 VLESS-37 | daily_free_v
+      - 🌐 TROJAN-38 | daily_free_v
+      - 🇫🇷 HYSTERIA-39 | daily_free_v
+      - 🇦🇺 VLESS-40 | verified
+      - 🇩🇪 VLESS-41 | daily_free_v
+      - 🇳🇱 HYSTERIA-42 | daily_free_v
   - name: 🚀 节点选择
     type: select
     proxies:
       - 🛟 兜底直连
       - ♻️ 自动选择
+      - 🇭🇰 节点
+      - 🇳🇱 节点
       - 🇫🇷 节点
+      - 🇺🇸 节点
       - 🌐 节点
+      - 🇩🇪 节点
+      - 🇷🇺 节点
       - ☑️ 手动切换
   - name: 🤖 OpenAi
     type: select
