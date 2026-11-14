@@ -184,6 +184,21 @@ rules:
   - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
   - DOMAIN-SUFFIX,github.io,🚀 节点选择
   - DOMAIN-SUFFIX,github.dev,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.dog,🚀 节点选择
+  - DOMAIN-SUFFIX,t.me,🚀 节点选择
+  - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
+  - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
+  - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
+  - DOMAIN-SUFFIX,graph.org,🚀 节点选择
+  - DOMAIN-SUFFIX,tg.dev,🚀 节点选择
+  - DOMAIN-SUFFIX,comments.app,🚀 节点选择
+  - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
+  - IP-CIDR,95.161.64.0/20,🚀 节点选择,no-resolve
+  - IP-CIDR,91.105.192.0/23,🚀 节点选择,no-resolve
+  - IP-CIDR,185.76.151.0/24,🚀 节点选择,no-resolve
   - DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择
   - DOMAIN-SUFFIX,unpkg.com,🚀 节点选择
   - DOMAIN-SUFFIX,huggingface.co,🚀 节点选择
@@ -253,6 +268,15 @@ rules:
   - DOMAIN-SUFFIX,tiktok.com,🚀 节点选择
   - DOMAIN-SUFFIX,line.me,🚀 节点选择
   - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.dog,🚀 节点选择
+  - DOMAIN-SUFFIX,t.me,🚀 节点选择
+  - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
+  - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
+  - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
+  - DOMAIN-SUFFIX,graph.org,🚀 节点选择
+  - DOMAIN-SUFFIX,tg.dev,🚀 节点选择
+  - DOMAIN-SUFFIX,comments.app,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
   - DOMAIN-SUFFIX,disneyplus.com,🚀 节点选择
   - DOMAIN-SUFFIX,primevideo.com,🚀 节点选择
