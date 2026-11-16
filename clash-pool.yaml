@@ -5,8 +5,22 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - name: 🌐 SS-001 | MetaFetch
+    server: 202.50.253.90
+    port: 19999
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 🌐 SS-002 | MetaFetch
+    server: 202.50.253.36
+    port: 19999
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
   - client-fingerprint: firefox
-    name: 🌐 VLESS-001 | carry:🇦🇺 V
+    name: 🇩🇪 VLESS-003 | proxy-pool
     network: xhttp
     port: 443
     server: 193.160.208.240
@@ -18,22 +32,6 @@ proxies:
     xhttp-opts:
       mode: auto
       path: /assets/twru01/
-  - cipher: aes-256-gcm
-    name: 🌐 SS-002 | daily_free_v
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.36
-    sub_tag: B007-260618
-    type: ss
-    udp: true
-  - cipher: aes-256-gcm
-    name: 🌐 SS-003 | daily_free_v
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.90
-    sub_tag: C001-260618
-    type: ss
-    udp: true
 proxy-groups:
   - name: 🛟 兜底直连
     type: fallback
@@ -46,9 +44,9 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🌐 VLESS-001 | carry:🇦🇺 V
-      - 🌐 SS-002 | daily_free_v
-      - 🌐 SS-003 | daily_free_v
+      - 🌐 SS-001 | MetaFetch
+      - 🌐 SS-002 | MetaFetch
+      - 🇩🇪 VLESS-003 | proxy-pool
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -56,9 +54,8 @@ proxy-groups:
   - name: 🌐 节点
     type: url-test
     proxies:
-      - 🌐 VLESS-001 | carry:🇦🇺 V
-      - 🌐 SS-002 | daily_free_v
-      - 🌐 SS-003 | daily_free_v
+      - 🌐 SS-001 | MetaFetch
+      - 🌐 SS-002 | MetaFetch
     url: https://github.com
     interval: 300
     tolerance: 50
@@ -66,9 +63,9 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     proxies:
-      - 🌐 VLESS-001 | carry:🇦🇺 V
-      - 🌐 SS-002 | daily_free_v
-      - 🌐 SS-003 | daily_free_v
+      - 🌐 SS-001 | MetaFetch
+      - 🌐 SS-002 | MetaFetch
+      - 🇩🇪 VLESS-003 | proxy-pool
   - name: 🚀 节点选择
     type: select
     proxies:
