@@ -241,6 +241,8 @@ proxy-groups:
       - REJECT
       - DIRECT
 rules:
+  - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,gvt1.com,🎯 全球直连
   - DOMAIN-SUFFIX,opencode.ai,🎯 全球直连
   - DOMAIN-KEYWORD,opencode,🎯 全球直连
   - DOMAIN,localhost,🎯 全球直连
