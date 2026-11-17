@@ -241,6 +241,8 @@ proxy-groups:
       - REJECT
       - DIRECT
 rules:
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ångström.com,🎯 全球直连
   - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,gvt1.com,🎯 全球直连
   - DOMAIN-SUFFIX,opencode.ai,🎯 全球直连
