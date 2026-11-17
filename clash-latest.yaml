@@ -100,13 +100,10 @@ proxies:
     udp: true
 proxy-groups:
   - name: 🛟 兜底直连
-    type: fallback
+    type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-    url: https://www.baidu.com
-    interval: 120
-    lazy: false
   - name: ♻️ 自动选择
     type: url-test
     proxies:
